@@ -11,16 +11,35 @@ export const Navbar = () => {
     await signOut(auth);
   };
 
+  const triggerToggle = () => {
+    document.querySelector(".dropdown-menu")?.classList.toggle("open");
+
+    const isOpen = document
+      .querySelector(".dropdown-menu")
+      ?.classList.contains("open");
+  };
   return (
     <div className="nav">
       <nav className="navbar">
         <div className="logo">Post-iT</div>
-        <div className="menu" style={user ? { width: "450px" } : {}}>
-          <Link to="/">Home</Link>
+        <ul className="links" style={user ? { width: "450px" } : {}}>
+          <li>
+            <Link to="/" className="a">
+              Home
+            </Link>
+          </li>
           {user ? (
-            <Link to="/createpost">Create Post</Link>
+            <li>
+              <Link to="/createpost" className="a">
+                Create Post
+              </Link>
+            </li>
           ) : (
-            <Link to="/login">Login</Link>
+            <li>
+              <Link to="/login" className="a">
+                Login
+              </Link>
+            </li>
           )}
           {user && (
             <div className="afterLoginNav">
@@ -29,6 +48,29 @@ export const Navbar = () => {
                 Log out
               </button>
             </div>
+          )}
+        </ul>
+        <div className="toggle-btn" onClick={triggerToggle}>
+          <i className="fa-solid fa-bars"></i>
+        </div>
+        <div className="dropdown-menu">
+          <li>
+            <Link to="/" className="a">
+              Home
+            </Link>
+          </li>
+          {user ? (
+            <li>
+              <Link to="/createpost" className="a">
+                Create Post
+              </Link>
+            </li>
+          ) : (
+            <li>
+              <Link to="/login" className="a">
+                Login
+              </Link>
+            </li>
           )}
         </div>
       </nav>
