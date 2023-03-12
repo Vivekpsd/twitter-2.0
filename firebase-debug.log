@@ -1,0 +1,21 @@
+[debug] [2023-03-12T16:56:26.199Z] ----------------------------------------------------------------------
+[debug] [2023-03-12T16:56:26.201Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vivek\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-12T16:56:26.202Z] CLI Version:   11.24.1
+[debug] [2023-03-12T16:56:26.202Z] Platform:      win32
+[debug] [2023-03-12T16:56:26.202Z] Node Version:  v16.16.0
+[debug] [2023-03-12T16:56:26.203Z] Time:          Sun Mar 12 2023 22:26:26 GMT+0530 (India Standard Time)
+[debug] [2023-03-12T16:56:26.204Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-12T16:56:26.214Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-12T16:56:26.215Z] > authorizing via signed-in user (vivekpsd01@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Web Dev\basicSocialMedia\social-media
+

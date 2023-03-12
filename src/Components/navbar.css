@@ -1,0 +1,51 @@
+.navbar {
+  height: 90px;
+  background-color: rgb(29, 29, 29);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  padding: 0 200px 0 200px;
+  color: rgb(240, 240, 240);
+}
+
+.navbar a {
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+}
+
+.navbar .logo {
+  font-size: 32px;
+  color: white;
+}
+
+.menu {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+img {
+  height: 35px;
+  width: 35px;
+  border-radius: 15px;
+}
+
+.afterLoginNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logout-btn {
+  border: none;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: rgb(255, 97, 97);
+  font-weight: bold;
+  cursor: pointer;
+}
