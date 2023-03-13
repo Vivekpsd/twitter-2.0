@@ -16,11 +16,11 @@ export const CreateForm = () => {
   const navigate = useNavigate();
 
   const schema = yup.object().shape({
-    title: yup.string().required("You must add a title. "),
+    title: yup.string().required("You must add a title. ").min(10).max(24),
     description: yup
       .string()
       .required("You must add a description. ")
-      .max(50)
+      .max(70)
       .min(10),
   });
 

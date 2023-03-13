@@ -88,12 +88,12 @@ const Post = (props: Props) => {
       <div className="post-card">
         <div className="title">
           <h2>{post.title}</h2>
+          <small>@{post.username}</small>
         </div>
         <div className="body">
           <p>{post.description}</p>
         </div>
         <div className="footer">
-          <p>@{post.username}</p>
           <button
             className="like-button"
             onClick={hasUserLiked ? removeLike : addLike}
