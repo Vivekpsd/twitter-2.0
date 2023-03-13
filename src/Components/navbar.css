@@ -4,7 +4,7 @@
   background-color: rgb(115, 215, 255);
 }
 
-.navbar {
+.navbar-logout {
   height: 100px;
   width: 100%;
   max-width: 1200px;
@@ -15,22 +15,79 @@
   justify-content: space-between;
 }
 
-.navbar .logo {
+.logout-btn {
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: rgb(255, 157, 111);
+  border: none;
+  border-radius: 5px;
+}
+
+.navbar-login {
+  height: 100px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: rgb(115, 215, 255);
+  justify-content: space-between;
+}
+
+.navbar-login .logo {
   font-size: 2rem;
   font-weight: bold;
   padding-left: 25px;
 }
 
-.navbar .links {
+.navbar-logout .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+.navbar-login .links {
   display: flex;
   gap: 3rem;
 }
 
-.navbar li:last-child {
+.navbar-logout .links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar-logout .logout-btn {
   margin-right: 25px;
 }
 
-.navbar .toggle-btn {
+.navbar-login li:last-child {
+  margin-right: 25px;
+}
+
+.afterLoginNav {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.afterLoginNav img {
+  height: 45px;
+  width: 45px;
+  border-radius: 20px;
+}
+
+.navbar-login .toggle-btn {
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  margin-right: 25px;
+}
+
+.navbar-logout .toggle-btn {
   color: #000;
   font-size: 1.5rem;
   cursor: pointer;
@@ -65,7 +122,7 @@ a:hover {
   top: 80px;
   width: 200px;
   height: 0px;
-  background-color: rgba(165, 227, 255, 0.578);
+  background-color: rgba(192, 235, 255, 0.68);
   backdrop-filter: blur(15px);
   border-radius: 15px;
   overflow: hidden;
@@ -85,20 +142,35 @@ a:hover {
 
 .dropdown-menu.open {
   height: 200px;
+  z-index: 100;
 }
 
 /* Responsive Design */
 @media (max-width: 992px) {
-  .navbar .links {
+  .navbar-login .links {
     display: none;
   }
 
-  .navbar .toggle-btn {
+  .navbar-logout .links {
+    display: none;
+  }
+
+  .navbar-login .toggle-btn {
+    display: block;
+  }
+
+  .navbar-logout .toggle-btn {
     display: block;
   }
 
   .dropdown-menu {
     display: block;
+  }
+  .navbar-login li:last-child {
+    margin-right: 0px;
+  }
+  .navbar-logout li:last-child {
+    margin-right: 0px;
   }
 }
 
@@ -106,5 +178,11 @@ a:hover {
   .dropdown-menu {
     left: 2rem;
     width: unset;
+  }
+  .navbar-login li:last-child {
+    margin-right: 0px;
+  }
+  .navbar-logout li:last-child {
+    margin-right: 0px;
   }
 }

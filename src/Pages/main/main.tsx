@@ -29,7 +29,7 @@ export const Main = () => {
   }, []);
   return (
     <>
-      <div className="container">
+      <div className={postsList ? "container-login" : "container-logout"}>
         <h1>Welcome to Home Page 🙋‍♂️</h1>
       </div>
       <p>

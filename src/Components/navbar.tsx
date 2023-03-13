@@ -20,9 +20,9 @@ export const Navbar = () => {
   };
   return (
     <div className="nav">
-      <nav className="navbar">
+      <nav className={user ? "navbar-logout" : "navbar-login"}>
         <div className="logo">Post-iT</div>
-        <ul className="links" style={user ? { width: "450px" } : {}}>
+        <ul className="links">
           <li>
             <Link to="/" className="a">
               Home
@@ -60,11 +60,21 @@ export const Navbar = () => {
             </Link>
           </li>
           {user ? (
-            <li>
-              <Link to="/createpost" className="a">
-                Create Post
-              </Link>
-            </li>
+            <>
+              <li>
+                <Link to="/createpost" className="a">
+                  Create Post
+                </Link>
+              </li>
+              <li>
+                <div className="afterLoginNav">
+                  <img src={user?.photoURL || ""} alt="profile_picture" />
+                  <button className="logout-btn" onClick={signUserOut}>
+                    Log out
+                  </button>
+                </div>
+              </li>
+            </>
           ) : (
             <li>
               <Link to="/login" className="a">
