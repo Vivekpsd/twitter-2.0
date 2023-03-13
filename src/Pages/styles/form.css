@@ -1,11 +1,17 @@
+.create-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin-top: 30px;
+}
+
 .create-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 290px;
-  margin: 0 500px 0 500px;
-  background-color: rgb(113, 217, 255);
-  border-radius: 10px;
+  height: 300px;
 }
 
 .form-input {
