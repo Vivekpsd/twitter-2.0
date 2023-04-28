@@ -2,7 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 600px;
+  background-color: black;
+  color: white;
+}
+
+.container-logout p,
+h1 {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.container-logout p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.container-logout img {
   height: 500px;
+  width: 800px;
+  margin-left: 150px;
+  border-radius: 10px;
 }
 
 .container-login {

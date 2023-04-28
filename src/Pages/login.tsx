@@ -13,10 +13,27 @@ export const Login = () => {
 
   return (
     <div className="login-mod">
-      <h1>Signin with Google to continue...</h1>
+      <div>
+        <form action="">
+          <div className="input-set">
+            <label htmlFor="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div className="input-set">
+            <label htmlFor="passw">Password</label>
+            <input type="text" name="passw" id="passw" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+      <br></br>
+      <p>OR</p>
+      <br></br>
+      <hr></hr>
+      <h3>Signin with Google to continue</h3>
       <br></br>
       <div className="login-btn" onClick={signInWithGoogle}>
-        <button>Signin with Google</button>
+        <h5>Signin with Google</h5>
       </div>
       <br></br>
     </div>

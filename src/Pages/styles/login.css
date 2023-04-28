@@ -6,19 +6,52 @@
   height: 524px;
 }
 
-.login-mod button {
+form {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: rgb(136, 225, 255);
+}
+
+form button {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid rgb(35, 110, 209);
+  border-radius: 10px;
+  background-color: rgb(126, 225, 255);
+}
+
+.input-set {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-set input {
+  height: 25px;
+  width: 250px;
+}
+
+.login-btn {
   padding: 10px 15px;
   font-size: 18px;
   font-weight: bold;
   border: none;
   border-radius: 10px;
-  background-color: rgb(255, 151, 91);
+  background-color: rgb(126, 225, 255);
 }
 
-.login-mod button:hover {
+.login-btn:hover {
   padding: 12px 17px;
   font-size: 19.5px;
-  background-color: rgb(255, 167, 116);
+  background-color: rgb(100, 190, 235);
   transition: 0.1s;
 }
 

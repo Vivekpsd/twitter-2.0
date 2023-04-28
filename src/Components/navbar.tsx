@@ -23,7 +23,7 @@ export const Navbar = () => {
   return (
     <div className="nav">
       <nav className={user ? "navbar-logout" : "navbar-login"}>
-        <div className="logo">Post-iT</div>
+        <div className="logo">Twitter 2.0</div>
         <ul className="links">
           <li>
             <Link to="/" className="a">
